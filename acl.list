@@ -1,0 +1,10 @@
+ access-list vlan123 extended deny tcp 1.2.3.0 0.0.3.255 any range 22 telnet
+ access-list vlan123 extended deny tcp 10.2.3.0 0.0.1.255 any range 22 telnet
+ access-list vlan123 extended deny tcp 10.2.3.0 0.0.3.255 any eq 3389
+ access-list vlan123 extended permit icmp any any
+ access-list vlan123 extended permit udp any any
+ access-list vlan123 extended permit tcp host 10.0.0.2 host 10.1.4.2 eq 22
+ access-list vlan123 extended permit ip 10.1.1.0 0.0.0.255 any
+ access-list vlan123 extended permit tcp any any eq telnet log
+ access-list vlan123 extended permit tcp any any eq 3389 log
+ access-list vlan123 extended permit ip any any
