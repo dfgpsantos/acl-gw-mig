@@ -1,0 +1,26 @@
+        {
+            "resource_type": "Rule",
+            "description": "DESCVAR",
+            "id": "RULEVAR",
+            "display_name": "RULEVAR",
+            "relative_path": "RULEVAR",
+            "source_groups": [
+                "SOURCEVAR"
+            ],
+            "destination_groups": [
+                "DESTINATIONVAR"
+            ],
+            "scope": [
+                "/infra/tier-1s/T1VAR"
+            ],
+            "services": [
+                "SERVICE1VAR", "SERVICE2VAR"
+            ],
+            "service_entries" : [ {
+                "l4_protocol" : "PROTOVAR",
+                "destination_ports" : [ "PROTOPORTVAR" ],
+                "resource_type" : "L4PortSetServiceEntry"
+            } ],
+            "action": "ACTIONVAR",
+            "logged": true
+        },
